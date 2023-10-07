@@ -11,7 +11,7 @@
 ## Installation Steps:
 1. Install Miniconda 
 Download and install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html).
-2. Create a Conda Environment: 
+2. Create a Conda Environment:  
 Run Miniconda CLI
 ```
 conda create --name tf python=3.9
