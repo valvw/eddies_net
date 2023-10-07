@@ -9,10 +9,22 @@
 - cuDNN SDK 8.6.0
 
 ## Installation Steps:
-1. Install Miniconda:
+1. Install Miniconda 
 Download and install Miniconda.
 2. Create a Conda Environment:
-
+Run Miniconda
 ```
 conda create --name tf python=3.9
+conda activate tf
 ```
+3. GPU setup 
+```
+conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
+```
+4. Install TensorFlow 
+```
+pip install "tensorflow<2.11" 
+```
+5. Verify the installation
+python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+If a list of GPU devices is returned, you've installed TensorFlow successfully.
