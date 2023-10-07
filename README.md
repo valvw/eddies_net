@@ -1,6 +1,6 @@
 ## Software Requirements
 
-- Python 3.9–3.11
+- [Python 3.9–3.11](https://www.python.org/downloads/)
 - pip version 19.0 or higher for Windows
 - Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019 
 ### NVIDIA software for GPU support
