@@ -26,5 +26,7 @@ conda install -c conda-forge cudatoolkit=11.2 cudnn=8.1.0
 pip install "tensorflow<2.11" 
 ```
 5. Verify the installation 
+```
 python -c "import tensorflow as tf; print(tf.config.list_physical_devices('GPU'))"
+```
 If a list of GPU devices is returned, you've installed TensorFlow successfully.
