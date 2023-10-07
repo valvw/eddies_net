@@ -1,6 +1,10 @@
 import os
 import zipfile
 from tqdm import tqdm
+import gdown
+
+url = "https://drive.google.com/file/d/1vQA62M_K5_djmfDWzJ3TD5jYS8Xi3AVV/view?usp=sharing"
+gdown.download(url=url, quiet=False, fuzzy=True)
 
 with zipfile.ZipFile('images2.zip', 'r') as zip_ref:
     file_list = zip_ref.namelist()
