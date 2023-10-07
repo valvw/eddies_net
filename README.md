@@ -9,7 +9,7 @@
 - [cuDNN SDK 8.6.0](https://developer.nvidia.com/rdp/cudnn-archive)
 
 ## Installation Steps:
-1. Install Miniconda 
+1. Install Miniconda  
 Download and install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html).
 2. Create a Conda Environment:  
 Run Miniconda CLI
