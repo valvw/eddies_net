@@ -68,7 +68,7 @@ eddies_net/
 ├── README.md
 ```
 ## Training Specification
-batch size : 16 - 32 
+batch size : 16 - 32  
 number of epochs : 30 - 50 - 100 
 
 ## Train
