@@ -160,8 +160,8 @@ model.summary()
 from keras.optimizers import Adam
 
 # Define hyperparameters
-batch_size = 2
-num_epochs = 5
+batch_size = 16
+num_epochs = 30
 optimizer = Adam(learning_rate=3e-4)
 loss_function = 'sparse_categorical_crossentropy'
 activation_function = 'relu'
@@ -175,7 +175,7 @@ model_checkpoint = ModelCheckpoint('model.h5', verbose = 1, save_best_only=True,
 class updated_meanIoU(tf.keras.metrics.MeanIoU):
     
     def __init__(self, y_true=None, y_pred=None, num_classes=None, name=None, dtype=None):
-        super(UpdatedMeanIoU, self).__init__(num_classes = num_classes, name=name, dtype=dtype)
+        super(updated_meanIoU, self).__init__(num_classes = num_classes, name=name, dtype=dtype)
 
     def update_state(self, y_true, y_pred, sample_weight=None):
         y_pred = tf.math.argmax(y_pred, axis=-1)
