@@ -53,7 +53,7 @@ gdown --fuzzy 'https://drive.google.com/file/d/1X861Y1okQ944zqnRTtq8NxPhUmnb4uMs
 ## Project Structure
 Check!!
 ```
-tf_net/
+eddies_net/
 │
 ├── data/
 │   ├── patches_i
@@ -61,7 +61,7 @@ tf_net/
 │
 ├── loader.py
 │
-├── train.py
+├── net.py
 │
 ├── requirements.txt
 │
