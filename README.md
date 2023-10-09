@@ -45,11 +45,14 @@ Unzip  downloaded-archive.zip -d /path/to/user/../  ->  cd extracted-folder-name
 !pip install --upgrade --no-cache-dir gdown
 gdown --fuzzy 'https://drive.google.com/file/d/1CUMTMqwxq3bfabRgerlY3bufDcomVmYq/view?usp=sharing'
 !unzip patches_i.zip
+```
+```
 gdown --fuzzy 'https://drive.google.com/file/d/1X861Y1okQ944zqnRTtq8NxPhUmnb4uMs/view?usp=sharing'
 !unzip patches_m3.zip
 ```
 ## Project Structure
 Check!!
+```
 tf_net/
 │
 ├── data/
@@ -63,10 +66,10 @@ tf_net/
 ├── requirements.txt
 │
 ├── README.md
-
+```
 ## Training Specification
-batch size : 16 - 32
-number of epochs : 30 - 50 - 100
+batch size : 16 - 32 
+number of epochs : 30 - 50 - 100 
 
 ## Train
 Use python net.py to start the training !(trained model will be saved)
