@@ -10,8 +10,7 @@
 [Setting environment variables for CUDA](https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805)
 
 ## Installation Steps:
-1. Install Miniconda 
-Download and install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html).
+1. Download and install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html).
 2. Create a Conda Environment: 
 Run Miniconda CLI
 ```
