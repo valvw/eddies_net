@@ -98,3 +98,8 @@ number of epochs : 30 - 50 - 100
 
 ## Train
 Use python net.py to start the training !(trained model will be saved)
+```
+cd extracted-folder-name
+conda activate tf
+python net.py 
+```
