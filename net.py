@@ -160,7 +160,7 @@ model.summary()
 from keras.optimizers import Adam
 
 # Define hyperparameters
-batch_size = 16
+batch_size = 8
 num_epochs = 30
 optimizer = Adam(learning_rate=3e-4)
 loss_function = 'sparse_categorical_crossentropy'
