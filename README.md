@@ -5,7 +5,7 @@
 - Microsoft Visual C++ Redistributable for Visual Studio 2015, 2017, and 2019 
 ### NVIDIA software for GPU support
 - NVIDIA GPU drivers version 450.80.02 or higher
-- [CUDA Toolkit 11.8](https://developer.nvidia.com/cuda-11-8-0-download-archive)
+- [CUDA Toolkit 11.2](https://developer.nvidia.com/cuda-11.2.0-download-archive)
 - [cuDNN SDK 8.1.1](https://developer.nvidia.com/rdp/cudnn-archive)  
 [Setting environment variables for CUDA](https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805)
 
