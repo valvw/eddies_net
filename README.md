@@ -6,9 +6,21 @@
 ### NVIDIA software for GPU support
 - NVIDIA GPU drivers version 450.80.02 or higher
 - [CUDA Toolkit 11.2](https://developer.nvidia.com/cuda-11.2.0-download-archive)
-- [cuDNN SDK 8.1.1](https://developer.nvidia.com/rdp/cudnn-archive)  
-[Setting environment variables for CUDA](https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805)
-
+Choose Express installation and click on Next. This will install the CUDA Toolkit on your system in the location C:\Program Files\NVIDIA GPU Computing Toolkit.
+- [cuDNN SDK 8.1.1](https://developer.nvidia.com/rdp/cudnn-archive)
+Copy the contents of the cuda folder inside the cuDNN folder to the path where we installed CUDA in step 1 above. (We need the contents of the bin, include & lib folders from cuDNN to be inside the bin, include and lib folders of the CUDA directory)
+[Setting environment variables for CUDA](https://medium.com/geekculture/install-cuda-and-cudnn-on-windows-linux-52d1501a8805) 
+Next, make sure to check if your Environment variables have the path to CUDA as shown in the image. (It should automatically add the second path) If it doesnt then manually add them to the System variables.
+```
+User + System variables:
+CUDA_PATH — -> C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
+System variables:
+CUDA_PATH_V11_0 — → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
+```
+```
+User + System variables
+CUDNN — -> C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\bin;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\include;C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2\lib;
+```
 ## Installation Steps:
 1. Download and install [Miniconda](https://docs.conda.io/projects/miniconda/en/latest/index.html).
 2. Create a Conda Environment: 
