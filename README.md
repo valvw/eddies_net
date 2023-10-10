@@ -6,7 +6,7 @@
 ### NVIDIA software for GPU support
 - NVIDIA GPU drivers version 450.80.02 or higher
 - [CUDA Toolkit 11.8](https://developer.nvidia.com/cuda-11-8-0-download-archive)
-- [cuDNN SDK 8.6.0](https://developer.nvidia.com/rdp/cudnn-archive)
+- [cuDNN SDK 8.1.1](https://developer.nvidia.com/rdp/cudnn-archive)
 
 ## Installation Steps:
 1. Install Miniconda 
