@@ -169,8 +169,7 @@ scaled_optimizer = mixed_precision.LossScaleOptimizer(optimizer, dynamic = True)
 
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 
-model_checkpoint = ModelCheckpoint('model.h5', verbose = 1, save_best_only=True, 
-                                   save_weights_only=True)
+model_checkpoint = ModelCheckpoint('model.h5', verbose = 1, save_weights_only=True)
 
 class updated_meanIoU(tf.keras.metrics.MeanIoU):
     
