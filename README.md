@@ -48,13 +48,13 @@ pip install --upgrade --no-cache-dir gdown
 gdown --fuzzy 'https://drive.google.com/file/d/1CUMTMqwxq3bfabRgerlY3bufDcomVmYq/view?usp=sharing'
 ```
 ```
-!unzip patches_i.zip
+unzip patches_i.zip
 ```
 ```
 gdown --fuzzy 'https://drive.google.com/file/d/1X861Y1okQ944zqnRTtq8NxPhUmnb4uMs/view?usp=sharing'
 ```
 ```
-!unzip patches_m3.zip
+unzip patches_m3.zip
 ```
 ## Project Structure
 Check!!
