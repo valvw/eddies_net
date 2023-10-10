@@ -50,9 +50,13 @@ pip install -r requirements.txt
 ```
 ## Load this repository
 Click on the "Code" button located near the top right of the repository page. In the dropdown menu that appears, click on the "Download ZIP" option. 
+```
 Unzip  downloaded-archive.zip -d /path/to/user/../  ->  cd extracted-folder-name
-
+```
 ## Load and unzip dataset 
+Link 1 without py: https://drive.google.com/file/d/1CUMTMqwxq3bfabRgerlY3bufDcomVmYq/view?usp=drive_link 
+Link 2: https://drive.google.com/file/d/1X861Y1okQ944zqnRTtq8NxPhUmnb4uMs/view?usp=drive_link 
+OR
 ```
 pip install --upgrade --no-cache-dir gdown
 ```
