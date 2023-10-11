@@ -49,7 +49,7 @@ def sort_by_last_two_elements(file_path):
 
 
 dir_i = r'data\patches_i'
-dir_m = r'data\patches_m'
+dir_m = r'data\patches_m3'
 images = sorted(glob.glob(os.path.join(dir_i, "*.tif")))
 #masks = sorted(glob.glob(os.path.join(dir_m, "*.tif")))
 
@@ -161,7 +161,7 @@ from keras.optimizers import Adam
 
 # Define hyperparameters
 batch_size = 8
-num_epochs = 30
+num_epochs = 5
 optimizer = Adam(learning_rate=3e-4)
 loss_function = 'sparse_categorical_crossentropy'
 activation_function = 'relu'
@@ -169,7 +169,8 @@ scaled_optimizer = mixed_precision.LossScaleOptimizer(optimizer, dynamic = True)
 
 from tensorflow.keras.callbacks import EarlyStopping, ModelCheckpoint
 
-model_checkpoint = ModelCheckpoint('model.h5', verbose = 1, save_weights_only=True)
+
+model_checkpoint = ModelCheckpoint(filepath=os.path.join('weight', 'weights.{epoch:02d}.{accuracy:.4f}.hdf5'), monitor = 'accuracy', verbose = 1, save_weights_only=True)
 
 class updated_meanIoU(tf.keras.metrics.MeanIoU):
     
@@ -188,7 +189,16 @@ metrics = [
 
 model.compile(optimizer=scaled_optimizer, loss = loss_function, metrics = metrics)
 
-history = model.fit(dataset.batch(batch_size), epochs=num_epochs, callbacks=[model_checkpoint])
+try:
+    checkpoints = glob.glob('weight/weights*.hdf5')
+    last_checkpoint = max(checkpoints)
+    last_epoch = int(last_checkpoint.split('.')[1])
+    model.load_weights(last_checkpoint)
+
+except (FileNotFoundError, ValueError):
+    last_epoch = 0 
+
+history = model.fit(dataset.batch(batch_size), epochs=num_epochs, initial_epoch = last_epoch, callbacks=[model_checkpoint])
 
 model.save("eddies_20_epochs.hdf5")
 
