@@ -15,7 +15,7 @@ Next, make sure to check if your Environment variables have the path to CUDA as 
 User + System variables:
 CUDA_PATH — -> C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
 System variables:
-CUDA_PATH_V11_0 — → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
+CUDA_PATH_V11_2 — → C:\Program Files\NVIDIA GPU Computing Toolkit\CUDA\v11.2
 ```
 ```
 User + System variables
