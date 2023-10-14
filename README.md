@@ -54,7 +54,7 @@ Click on the "Code" button located near the top right of the repository page. In
 Unzip  downloaded-archive.zip -d /path/to/user/../  ->  cd extracted-folder-name
 ```
 ## Load and unzip dataset 
-Link 1 without py: create folder 'data' -> unzip patches_i + patches_m: [https://drive.google.com/file/d/1CUMTMqwxq3bfabRgerlY3bufDcomVmYq/view?usp=drive_link](https://drive.google.com/file/d/11m2w7nVkI6teJkEP7zj5G1Hvl2doq4HO/view?usp=drive_link) 
+Link 1 without py: create folder 'data' -> unzip patches_i + patches_m: [https://drive.google.com/file/d/1CUMTMqwxq3bfabRgerlY3bufDcomVmYq/view?usp=drive_link](https://drive.google.com/file/d/11m2w7nVkI6teJkEP7zj5G1Hvl2doq4HO/view?usp=drive_link)   
 Link 2 Move the files to the 'patches_m': [https://drive.google.com/file/d/1X861Y1okQ944zqnRTtq8NxPhUmnb4uMs/view?usp=drive_link](https://drive.google.com/file/d/1jdZLh53MPJpxncH4rguNNiyGjIjw82Lx/view?usp=drive_link)    
 ```
 Unzip  drive_link_1+2.zip -d /path/to/user/../  ->  cd extracted-folder-name
@@ -74,7 +74,6 @@ gdown --fuzzy 'https://drive.google.com/file/d/1X861Y1okQ944zqnRTtq8NxPhUmnb4uMs
 ```
 ```
 unzip patches_m3+.zip
-cp -r patches_m3+/* /data/patches_m
 xcopy /E patches_m3+/* patches_m
 ```
 ## Project Structure
