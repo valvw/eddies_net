@@ -49,7 +49,7 @@ def sort_by_last_two_elements(file_path):
 
 
 dir_i = r'data\patches_i'
-dir_m = r'data\patches_m3'
+dir_m = r'data\patches_m'
 images = sorted(glob.glob(os.path.join(dir_i, "*.tif")))
 #masks = sorted(glob.glob(os.path.join(dir_m, "*.tif")))
 
@@ -160,7 +160,7 @@ model.summary()
 from keras.optimizers import Adam
 
 # Define hyperparameters
-batch_size = 8
+batch_size = 16
 num_epochs = 30
 optimizer = Adam(learning_rate=3e-4)
 loss_function = 'sparse_categorical_crossentropy'
@@ -188,6 +188,11 @@ metrics = [
 ]
 
 model.compile(optimizer=scaled_optimizer, loss = loss_function, metrics = metrics)
+
+
+if not os.path.exists('weight'):
+    os.mkdir('weight')
+
 
 try:
     checkpoints = glob.glob('weight/weights*.hdf5')
